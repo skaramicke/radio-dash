@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2018",
+    "lib": ["es2018"],
+    "allowJs": true,
+    "noEmit": false,
+    "isolatedModules": false
+  },
+  "include": [
+    "server.ts",
+    "lib/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "app/**/*",
+    "components/**/*"
+  ]
+}
